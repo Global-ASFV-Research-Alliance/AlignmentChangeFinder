@@ -452,7 +452,7 @@ def Rangemaker(info, FirstAA, FirstPositions):
         from operator import itemgetter
         import pandas as pd
 
-        if FirstAA or FirstPositions == 'Ref':
+        if str(FirstAA) == 'Ref' or str(FirstPositions) == 'Ref':
             if '(RefPos)' not in info[0]:
                 return ['NoReference']
 
